@@ -1,0 +1,29 @@
+uuid: 2a000052-42c8-4d5e-b791-ae8cee3e9550
+langcode: en
+status: true
+dependencies:
+  module:
+    - book
+    - node
+  theme:
+    - umami
+id: umami_booknavigation
+theme: umami
+region: breadcrumbs
+weight: -8
+provider: null
+plugin: book_navigation
+settings:
+  id: book_navigation
+  label: 'Book navigation'
+  label_display: visible
+  provider: book
+  block_mode: 'book pages'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      book: book

@@ -1,17 +1,17 @@
-uuid: fbd6edba-a7a5-4096-9fb8-b78116eb7765
+uuid: 277d6819-260e-45c5-87a8-d34b74c140a3
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - umami
+    - test
 _core:
   default_config_hash: R0XK_KzE-HPbKLfcvVjZF2FL79MUEIipq_nDvje9MRQ
-id: umami_content
-theme: umami
+id: test_content
+theme: test
 region: content
-weight: -9
+weight: -7
 provider: null
 plugin: system_main_block
 settings:

@@ -1,0 +1,27 @@
+uuid: 5b13f7fb-1855-4e3a-ab3a-77c80f74794f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - test
+_core:
+  default_config_hash: iAhownPneFU_HfOgPVITz339xTxjd_yAzbcBOUBd4Sk
+id: test_page_title
+theme: test
+region: sidebar_first
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: '<front>'

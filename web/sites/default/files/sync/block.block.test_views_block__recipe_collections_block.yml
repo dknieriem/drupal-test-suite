@@ -1,0 +1,26 @@
+uuid: f7d92934-c069-48e6-910b-762f61eee27a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.recipe_collections
+  module:
+    - views
+  theme:
+    - test
+_core:
+  default_config_hash: rLgYDFYFOZvMqivqa3tBKA4mSvcypo4oTZKuZ9mMERc
+id: test_views_block__recipe_collections_block
+theme: test
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_block:recipe_collections-block'
+settings:
+  id: 'views_block:recipe_collections-block'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

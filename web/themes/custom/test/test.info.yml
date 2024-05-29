@@ -1,0 +1,22 @@
+name: Test Theme
+type: theme
+description: 'A test theme for displaying access_unpublished_book functionality'
+core_version_requirement: '>=9.2'
+base theme: umami
+dependencies:
+  - drupal:access_unpublished_book
+regions:
+  pre_header: Pre-header
+  header: Header
+  highlighted: Highlighted
+  tabs: Tabs
+  banner_top: 'Banner Top'
+  breadcrumbs: Breadcrumbs
+  page_title: 'Page Title'
+  content: Content
+  sidebar: Sidebar
+  content_bottom: 'Content Bottom'
+  footer: Footer
+  bottom: Bottom
+  page_top: 'Page top' # Needed by Drupal Core
+  page_bottom: 'Page bottom' # Needed by Drupal Core

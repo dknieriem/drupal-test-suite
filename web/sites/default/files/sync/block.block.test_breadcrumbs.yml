@@ -1,17 +1,17 @@
-uuid: cdb6a29c-8261-4d6d-a9c8-5f57b39062eb
+uuid: d76839e7-8cd3-447c-a438-005a5c433261
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - umami
+    - test
 _core:
   default_config_hash: 5prrlTxk8gDlnDH_jhnc0dNihAw8WT-RVZ3nrec_wiE
-id: umami_breadcrumbs
-theme: umami
-region: breadcrumbs
-weight: -9
+id: test_breadcrumbs
+theme: test
+region: sidebar_first
+weight: 0
 provider: null
 plugin: system_breadcrumb_block
 settings:

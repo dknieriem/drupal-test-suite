@@ -62,4 +62,5 @@ module:
 theme:
   claro: 0
   umami: 0
+  test: 0
 profile: demo_umami

@@ -1,0 +1,11 @@
+<?php
+
+function test_preprocess_book_navigation(&$variables) {
+    $book_link = $variables['book_link'];
+    /** @var \Drupal\access_unpublished_book\AccessUnpublishedBookManager $book_manager */
+    $book_manager = \Drupal::service('access_unpublished_book.manager');
+    $toc = $book_manager->bookTreeAllData($book_link['bid'], $book_link);
+
+    $tree = $book_manager->bookTreeOutput($toc);
+    $variables['tree'] = $tree;
+}

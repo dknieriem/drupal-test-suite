@@ -56,7 +56,7 @@ class AccessUnpublishedBookManager extends BookManager implements BookManagerInt
     $this->tokenGetter = $tokenGetter;
     $this->connection = $connection;
 
-    parent::__construct( $entity_type_manager, $translation, $config_factory, $book_outline_storage $renderer,  $language_manager, $entity_repository, $backend_chained_cache, $memory_cache);
+    parent::__construct( $entity_type_manager, $translation, $config_factory, $book_outline_storage, $renderer,  $language_manager, $entity_repository, $backend_chained_cache, $memory_cache);
   }
 
   /** 
@@ -115,7 +115,7 @@ class AccessUnpublishedBookManager extends BookManager implements BookManagerInt
         if (!$cache) {
           $query = $this->connection->query("
             SELECT entity_id,value FROM access_token
-            WHERE entity_id IN ('" . impode("', '", $this->bookNodeIds) . "') AND (entity_type='node')
+            WHERE entity_id IN ('" . implode("', '", $this->bookNodeIds) . "') AND (entity_type='node')
           ");
           $result = $query->fetchAllKeyed(0);
           if ($result) {
@@ -221,7 +221,7 @@ class AccessUnpublishedBookManager extends BookManager implements BookManagerInt
 
     foreach ($items as $key => $item) {
       if ($this->hashTable && array_key_exists($key, $this->hashTable)) {
-        $items[$key]['url']->setOption('query', [$kashKey => $this->hashTable[$key]]);
+        $items[$key]['url']->setOption('query', [$hashKey => $this->hashTable[$key]]);
       }
     }
 

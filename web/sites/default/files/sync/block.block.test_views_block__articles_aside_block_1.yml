@@ -1,4 +1,4 @@
-uuid: 4ef965a9-b639-4c1e-aaa2-3955f2cf507f
+uuid: 0705e1a2-ecd1-4987-80de-22c9bb1fb673
 langcode: en
 status: true
 dependencies:
@@ -8,13 +8,13 @@ dependencies:
     - node
     - views
   theme:
-    - umami
+    - test
 _core:
   default_config_hash: 8-Bn-bZrfr5YvVJQnkk07At7wicycvUIEnhKSHex2co
-id: umami_views_block__articles_aside_block_1
-theme: umami
-region: sidebar
-weight: -9
+id: test_views_block__articles_aside_block_1
+theme: test
+region: sidebar_first
+weight: -7
 provider: null
 plugin: 'views_block:articles_aside-block_1'
 settings:
