@@ -1,0 +1,4 @@
+services:
+  access_unpublished_book.manager:
+    class: Drupal\access_unpublished_book\AccessUnpublishedBookManager
+    arguments: ['@access_unpublished.token_getter', '@database', '@entity_type.manager', '@string_translation', '@config.factory', '@book.outline_storage', '@renderer', '@language_manager', '@entity.repository', '@book.backend_chained_cache', '@book.memory_cache']

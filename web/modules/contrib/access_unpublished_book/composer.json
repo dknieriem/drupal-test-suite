@@ -1,0 +1,6 @@
+{
+	"name": "drupal/access_unpublished_book",
+	"description": "Extends unpublished access to book navigation links",
+	"type": "drupal-module",
+	"license": "N/A"
+}

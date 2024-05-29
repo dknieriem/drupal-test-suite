@@ -1,0 +1,8 @@
+name: 'Access Unpublished Book'
+type: module
+description: 'Extends access_unpublished to allow hash links in book navigation when appropriate.'
+package: Content
+core_version_requirement: ^9 || ^10
+dependencies:
+  - drupal:access_unpublished
+
